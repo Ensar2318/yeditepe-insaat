@@ -1469,6 +1469,11 @@ footer .socials a:hover {
   padding-top: 60px;
   padding-bottom: 80px;
 }
+@media (max-width: 991px) {
+  .section-v1-content.about-page {
+    padding-left: 10px;
+  }
+}
 .section-v1-content.white {
   color: white;
 }
