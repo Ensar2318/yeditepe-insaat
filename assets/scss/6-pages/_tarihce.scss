@@ -31,7 +31,13 @@
             transform: rotate(180deg);
             display: block;
             cursor: pointer;
-            transition: $transition;
+            transition: color $transition;
+            @include media-down("lg"){
+                text-orientation: inherit;
+                writing-mode: initial;
+                transform: rotate(360deg);
+                text-align: center;
+            }
         }
         &.swiper-slide-thumb-active {
             span {

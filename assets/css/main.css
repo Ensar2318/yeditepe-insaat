@@ -2286,7 +2286,16 @@ footer .socials a:hover {
   transform: rotate(180deg);
   display: block;
   cursor: pointer;
-  transition: 0.5s;
+  transition: color 0.5s;
+}
+@media (max-width: 991px) {
+  .historySwiperThumb .swiper-slide span {
+    text-orientation: inherit;
+    -ms-writing-mode: initial;
+        writing-mode: initial;
+    transform: rotate(360deg);
+    text-align: center;
+  }
 }
 .historySwiperThumb .swiper-slide.swiper-slide-thumb-active span {
   color: #D98563;
