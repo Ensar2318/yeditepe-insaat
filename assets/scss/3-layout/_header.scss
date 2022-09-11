@@ -203,6 +203,9 @@ header {
     @include media-down("lg"){
         padding: 0 30px;
     }
+    @include media-down("sm"){
+        min-height: 40px;
+    }
     .container {
         display: flex;
         justify-content: space-between;

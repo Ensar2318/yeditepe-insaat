@@ -1177,6 +1177,11 @@ header.light .navbar .nav-link.dropdown-active {
     padding: 0 30px;
   }
 }
+@media (max-width: 575px) {
+  .routing-area {
+    min-height: 40px;
+  }
+}
 .routing-area .container {
   display: flex;
   justify-content: space-between;
@@ -2302,6 +2307,11 @@ footer .socials a:hover {
     text-align: center;
   }
 }
+@media (max-width: 575px) {
+  .historySwiperThumb .swiper-slide span {
+    font-size: 32px;
+  }
+}
 .historySwiperThumb .swiper-slide.swiper-slide-thumb-active span {
   color: #D98563;
 }
@@ -2347,6 +2357,11 @@ footer .socials a:hover {
 @media (max-width: 991px) {
   .img-capsule-history img {
     height: 400px;
+  }
+}
+@media (max-width: 575px) {
+  .img-capsule-history img {
+    height: 300px;
   }
 }
 
