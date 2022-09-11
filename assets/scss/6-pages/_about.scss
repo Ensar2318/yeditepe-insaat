@@ -1,0 +1,36 @@
+.about-what-we-do {
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.what-we-do-below-section {
+    padding: 65px 137px;
+    background-color: $light-200;
+    @media (max-width:1600px) {
+        padding: 65px 80px;
+
+    }
+    @include media-down("md"){
+        padding: 20px;
+    }
+}
+.what-we-do-below-card {
+    border-bottom: solid 3px $primary;
+    height: 230px;
+    padding: 36px 26px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background-color: $white;
+    font-weight: 500;
+  
+    .title{
+        font: 700 23px $barlow;
+        padding-bottom: 18px;
+        margin-bottom: 17px;
+        border-bottom: solid 1px #F5F5F5;
+        color: $primary;
+    }
+}

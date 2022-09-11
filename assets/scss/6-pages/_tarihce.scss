@@ -1,0 +1,79 @@
+.history-hero-section {
+    padding-top: 250px;
+    background-image: url(../img/oppacity-seven.png);
+    background-size: 576px;
+    background-position: 60% 60%;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    padding-right: 20px;
+    @include media-down("lg"){
+        background-image: none;
+    }
+    .container-history {
+        max-width: 1680px;
+        margin-left: auto;
+    }
+}
+
+.history-swiper-wrap {
+    display: flex;
+    align-items: center;
+    gap: 34px;
+}
+.historySwiperThumb {
+    .swiper-slide {
+        span {
+            font: 500 43px $barlow;
+            color: #4e5b6e;
+            text-orientation: mixed;
+            writing-mode: vertical-lr;
+            position: relative;
+            transform: rotate(180deg);
+            display: block;
+            cursor: pointer;
+            transition: $transition;
+        }
+        &.swiper-slide-thumb-active {
+            span {
+                color: $primary;
+            }
+        }
+      
+    }
+}
+
+.img-capsule-history {
+    padding-right: 60px;
+    padding-left: 20px;
+    @include media-down("lg") {
+        padding-right: 0;
+        padding-left: 0;
+        text-align: center;
+        margin: -20px;
+    }
+    .back-object {
+        width: 80%;
+        height: 600px;
+        margin-left: auto;
+        margin-right: -60px;
+        margin-top: -550px;
+        animation-duration: 2s;
+
+        @include media-down("lg") {
+            display: none;
+            margin-right: 0;
+            padding-right: 0;
+        }
+    }
+    img {
+        width: 700px;
+        height: 595px;
+        object-fit: cover;
+        z-index: 5;
+        position: relative;
+        animation-duration: 2.5s;
+        @include media-down("lg") {
+        height: 400px;
+        }
+    }
+}

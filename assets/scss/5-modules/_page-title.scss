@@ -1,0 +1,39 @@
+.h3-title {
+    font: 500 48px $barlow;
+}
+.section-v1-content {
+    padding-bottom: 80px;
+
+    &.about-page {
+        padding-left: 220px;
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+    &.white {
+        color: white;
+    }
+    @media (max-width: 1600px) {
+        padding-left: 20px;
+    }
+    @include media-down("xxl") {
+        padding-top: 100px;
+    }
+    .sub-title {
+        color: $primary;
+        font: 500 20px $barlow;
+        margin-bottom: 18px;
+    }
+    .title {
+        font: 500 50px $barlow;
+        margin-bottom: 30px;
+        @include media-down("md") {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@include media-down("sm") {
+    .h3-title {
+        font-size: 30px;
+    }
+}
