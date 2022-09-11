@@ -1172,6 +1172,11 @@ header.light .navbar .nav-link.dropdown-active {
   display: flex;
   align-items: center;
 }
+@media (max-width: 991px) {
+  .routing-area {
+    padding: 0 30px;
+  }
+}
 .routing-area .container {
   display: flex;
   justify-content: space-between;

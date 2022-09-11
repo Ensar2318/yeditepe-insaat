@@ -216,6 +216,10 @@ var historySwiper = new Swiper(".historySwiper", {
     thumbs:{
         swiper:historySwiperThumb
     },
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: true,
+    },
     speed:1300,
     effect: "fade",
     virtualTranslate: true,
