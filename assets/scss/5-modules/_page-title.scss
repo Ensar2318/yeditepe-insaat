@@ -12,6 +12,9 @@
             padding-left: 10px;
         }
     }
+    &.owner{
+        padding-top: 0
+    }
     &.white {
         color: white;
     }
@@ -31,9 +34,11 @@
         margin-bottom: 30px;
         @include media-down("md") {
             margin-bottom: 20px;
+            font-size: 30px;
         }
     }
 }
+
 
 @include media-down("sm") {
     .h3-title {
