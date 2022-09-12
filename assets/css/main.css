@@ -971,6 +971,10 @@ body {
   }
 }
 
+.fs-50 {
+  font-size: 50px;
+}
+
 section {
   padding: 100px 0;
 }
@@ -1196,9 +1200,19 @@ header.light .navbar .nav-link.dropdown-active {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .routing-area .container {
+    justify-content: center;
+  }
+}
 .routing-area .title {
   font: 600 24px "barlow";
   color: #ffffff;
+}
+@media (max-width: 767px) {
+  .routing-area .title {
+    display: none;
+  }
 }
 .routing-area .routers-link {
   font: 500 16px "barlow";
@@ -2421,6 +2435,52 @@ footer .socials a:hover {
   }
 }
 
+.manager-section {
+  padding-top: 290px;
+}
+@media (max-width: 991px) {
+  .manager-section {
+    padding-top: 190px;
+  }
+}
+
+.manager-wrap {
+  padding: 0 30px;
+}
+
+.manager-card {
+  padding: 62px 62px 52px 62px;
+  background-color: #F6F5F3;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  text-align: center;
+}
+.manager-card img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.manager-card .content .title {
+  font: 400 24px "barlow";
+  color: #2E2E2E;
+}
+.manager-card .content .sub-title {
+  font: 500 18px "barlow";
+  color: #D98563;
+}
+.manager-card .link {
+  color: #D98563;
+  font-size: 22px;
+}
+
+@media (max-width: 1399px) {
+  .manager-card {
+    padding: 22px;
+  }
+}
 .morphext .animated {
   display: inline-block;
 }/*# sourceMappingURL=main.css.map */

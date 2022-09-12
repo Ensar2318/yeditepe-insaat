@@ -1,0 +1,44 @@
+.manager-section {
+    padding-top: 290px;
+    @include media-down("lg"){
+        padding-top: 190px;
+    }
+}
+
+.manager-wrap{
+ padding: 0 30px;   
+}
+.manager-card {
+    padding: 62px 62px 52px 62px;
+    background-color: $light-200;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    text-align: center;
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .content {
+        .title {
+            font: 400 24px $barlow;
+            color: $black;
+        }
+        .sub-title {
+            font: 500 18px $barlow;
+            color: $primary;
+        }
+    }
+    .link {
+        color: $primary;
+        font-size: 22px;
+    }
+}
+@include media-down("xxl") {
+    .manager-card {
+        padding: 22px;
+    }
+
+}

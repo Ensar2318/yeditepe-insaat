@@ -203,6 +203,7 @@ header {
     @include media-down("lg"){
         padding: 0 30px;
     }
+  
     @include media-down("sm"){
         min-height: 40px;
     }
@@ -210,10 +211,16 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        @include media-down("md"){
+        justify-content: center;
+        }
     }
     .title {
         font: 600 24px $barlow;
         color: $white;
+        @include media-down("md"){
+            display: none;
+        }
     }
     .routers-link {
         font: 500 16px $barlow;
