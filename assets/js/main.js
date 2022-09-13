@@ -207,20 +207,21 @@ var historySwiperThumb = new Swiper(".historySwiperThumb", {
             spaceBetween: 20,
         }
     },
-   
+
 });
+
 var historySwiper = new Swiper(".historySwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
-    thumbs:{
-        swiper:historySwiperThumb
+    thumbs: {
+        swiper: historySwiperThumb
     },
     autoplay: {
         delay: 5000,
         disableOnInteraction: true,
     },
-    speed:1300,
+    speed: 1300,
     effect: "fade",
     virtualTranslate: true,
     fadeEffect: { crossFade: true },
@@ -228,9 +229,34 @@ var historySwiper = new Swiper(".historySwiper", {
         nextEl: ".historySwiper-button-next",
         prevEl: ".historySwiper-button-prev",
     },
-    
+
 
 });
+
+var blogHeroSwiper = new Swiper(".blogHeroSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: true,
+    },
+    speed: 1300,
+    effect: "fade",
+    virtualTranslate: true,
+    fadeEffect: { crossFade: true },
+    navigation: {
+        nextEl: ".blogHeroSwiper-button-next",
+        prevEl: ".blogHeroSwiper-button-prev",
+    },
+    pagination: {
+        el: ".blogHeroPagination",
+        clickable: true,
+    },
+
+
+});
+
 
 
 

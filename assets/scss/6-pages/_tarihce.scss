@@ -97,9 +97,12 @@
     height: 800px;
     object-fit: cover;
     display: block;
+    padding-right:40px;
     @include media-down("lg"){
         width: 100%;
         height: 400px;
+    padding-right:0px;
+
     }
     @include media-down("sm"){
         height: 250px;

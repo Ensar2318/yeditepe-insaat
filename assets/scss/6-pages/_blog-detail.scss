@@ -1,0 +1,47 @@
+.blog-detail-hero-section{
+    padding-top: 240px;
+    background-image: url(../img/bg-seven.png),url(../img/bg-seven.png);
+    background-repeat: no-repeat;
+    background-size: 1100px;
+    background-position: -60% 80%, 170% -70%;
+    @include media-down("lg"){
+        background-image: none;
+    }
+    @include media-down("sm"){
+        padding-top: 170px;
+    }
+    .h3-title{
+        max-width: 600px;
+        margin: auto;
+       
+    }
+    .sub-title{
+        font-size: 22px;
+        max-width: 600px;
+        margin: auto;
+      
+    }
+    .date{
+        color: $primary;
+        font-weight: 700;
+        padding: 30px 0;
+        display: block;
+    }
+    .img{
+        margin-bottom: 70px;
+        @include media-down("lg"){
+            margin-bottom: 30px;
+        }
+    }
+    .content{
+        max-width: 800px;
+        margin: auto;
+        p{
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        @include media-down("lg"){
+            padding: 0 15px;
+        }
+    }
+}

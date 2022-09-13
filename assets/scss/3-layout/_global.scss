@@ -23,3 +23,38 @@ section {
     padding-top: 130px;
 }
 
+
+// image capsule
+
+.img-capsule {
+    .back-object {
+        width: 80%;
+        height: 400px;
+        margin-left: auto;
+    }
+    img{
+        margin-bottom: -350px;
+    }
+}
+@include media-down("xxl"){
+    .img-capsule {
+        .back-object {
+            height: 300px;
+           
+        }
+        img{
+            margin-bottom: -250px;
+        }
+    }
+   
+}
+@include media-down("lg"){
+    .img-capsule {
+        .back-object {
+            display: none;
+        }
+        img{
+            margin-bottom: 0;
+        }
+    }
+}

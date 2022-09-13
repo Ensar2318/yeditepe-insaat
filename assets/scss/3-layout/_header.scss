@@ -122,6 +122,7 @@ header {
     }
     &.light {
         background-color: $white;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         .mobile-btn {
             svg {
                 fill: rgba($color: $black, $alpha: 0.7);
@@ -192,8 +193,8 @@ header {
 // Routint area
 .routing-area {
     background-color: $primary;
-    min-height: 80px;
-    position: fixed;
+    min-height: 70px;
+    position: absolute;
     top: 104px;
     z-index: 98;
     left: 0;

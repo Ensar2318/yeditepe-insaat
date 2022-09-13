@@ -19,7 +19,7 @@
 <body>
 
     <!-- =========== Header Side =========== -->
-    <header class="dark">
+    <header class="light">
         <div class="container d-flex align-items-center flex-lg-nowrap flex-wrap justify-content-between">
             <a class="logo" href="index.html"> <img src="assets/img/logo.png" alt="logo"></a>
             <a href="#" class="mobile-btn d-block d-lg-none">
@@ -48,6 +48,15 @@
             </nav>
         </div>
     </header>
+    <div class="routing-area">
+        <div class="container">
+            <h5 class="title">Blog</h5>
+            <div class="routers-link">
+                <a href="index.html">Anasayfa <i class="icon-chevron-right"></i></a>
+                <a class="active" href="iletisim.html">Blog</a>
+            </div>
+        </div>
+    </div>
     <!-- Dropdown -->
     <div class="dropdown-wrap">
         <div id="about" class="dropdown-content">
@@ -65,8 +74,109 @@
             </div>
         </div>
     </div>
+    <!-- =========== Header Side =========== -->
 
+    <!-- =========== blog Hero START =========== -->
+    <section class="blog-hero-section">
+        <div class="container">
+            <div class="swiper blogHeroSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="row justify-content-between flex-column-reverse flex-lg-row">
+                            <div class="col-lg-4 d-flex align-items-center">
+                                <div class="section-v1-content blog-hero">
+                                    <h3 class="title">Yedi Yapı’dan Yeni Bir
+                                        Proje Açıklaması.. </h3>
+                                    <p>Yatırımları, güçlü markaları ve tüketicilere verdiği değer ile büyüyen
+                                        Türkiye’nin enerjisi. Geleceği belirleyecek kadar farklıyız.</p>
+                                    <a href="" class="btn-primary mt-5">Devamını Oku <i class="icon-Path3662"></i></a>
+                                    <div class="d-flex mt-3">
+                                        <div class="btn-redirect primary me-2 blogHeroSwiper-button-prev"><i
+                                                class="icon-chevron-left"></i></div>
+                                        <div class="btn-redirect primary blogHeroSwiper-button-next"><i
+                                                class="icon-chevron-right"></i></div>
+                                    </div>
+                                    <div class="blogHeroPagination">
 
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="img-capsule">
+                                    <img src="assets/img/blogs/blog-10.png">
+                                    <div class="back-object bg-primary me-0 w-80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="row justify-content-between  flex-column-reverse flex-lg-row">
+                            <div class="col-lg-4 d-flex align-items-center">
+                                <div class="section-v1-content blog-hero">
+                                    <h3 class="title">Yedi Yapı’dan Tarihsel Bir yapı</h3>
+                                    <p>Yatırımları, güçlü markaları ve tüketicilere verdiği değer ile büyüyen
+                                        Türkiye’nin enerjisi. Geleceği belirleyecek kadar farklıyız.</p>
+                                    <a href="" class="btn-primary mt-5">Devamını Oku <i class="icon-Path3662"></i></a>
+                                    <div class="d-flex mt-3">
+                                        <div class="btn-redirect primary me-2 blogHeroSwiper-button-prev"><i
+                                                class="icon-chevron-left"></i></div>
+                                        <div class="btn-redirect primary blogHeroSwiper-button-next"><i
+                                                class="icon-chevron-right"></i></div>
+                                    </div>
+                                    <div class="blogHeroPagination">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="img-capsule">
+                                    <img src="assets/img/blogs/blog-9.png">
+                                    <div class="back-object bg-primary me-0 w-80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========== blog Hero END =========== -->
+
+    <!-- =========== blog lists START =========== -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="blogs-list">
+                <div class="row gy-5">
+                    <!-- <div class="col-lg-3">
+                        <div class="blog-card">
+                            <div class="blog-card">
+                                <div class="head">
+                                    <img src="assets/img/blogs/blog-1.png">
+                                </div>
+                                <div class="content">
+                                    <span class="date">06.11.2022</span>
+                                    <h5 class="title">Yedi Yapı’dan Yerli plaza
+                                        Yeni Bir Proje
+                                        Açıklaması.. </h5>
+                                </div>
+                                <div class="link">
+                                    <a href=""> Devamını Oku <i class="icon-Path3662"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="blog-pagination">
+                <a href="" class="active">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+            </div>
+        </div>
+    </section>
+    <!-- =========== blog lists END =========== -->
 
 
 
@@ -131,11 +241,6 @@
 
 
 
-
-
-
-
-
     <!-- Vendor Js Files File-->
     <script src="assets/vendor/jquerry/jquery-3.6.0.min.js"></script>
     <script src="assets/vendor/swipperjs/swiper-bundle.min.js"></script>
@@ -145,7 +250,29 @@
     <script src="assets/js/main.js"></script>
 
     <script>
-
+        $(document).ready(function () {
+            for (let index = 1; index <= 8; index++) {
+                content = `<div class="col-lg-3 col-md-4 col-sm-6">
+                        <div class="blog-card">
+                            <div class="blog-card">
+                                <div class="head">
+                                    <img src="assets/img/blogs/blog-`+index+`.png">
+                                </div>
+                                <div class="content">
+                                    <span class="date">06.11.2022</span>
+                                    <h5 class="title">Yedi Yapı’dan Yerli plaza
+                                        Yeni Bir Proje
+                                        Açıklaması.. </h5>
+                                </div>
+                                <div class="link">
+                                    <a href="blog-detay.html"> Devamını Oku <i class="icon-Path3662"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>`;
+                    $(".blogs-list .row").append(content);
+            }
+        });
     </script>
 
 </body>

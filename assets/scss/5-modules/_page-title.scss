@@ -18,6 +18,10 @@
     &.white {
         color: white;
     }
+    &.blog-hero{
+        padding-bottom: 0px;
+      padding-top: 20px;
+    }
     @media (max-width: 1600px) {
         padding-left: 20px;
     }

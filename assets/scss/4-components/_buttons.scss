@@ -57,8 +57,18 @@
     color: white;
     border-radius: 32px;
     transition: $transition;
+    cursor: pointer;
     &:hover {
         background-color: rgba($color: $white, $alpha: 0.4);
+    }
+    &.primary{
+        border-color: $primary;
+        background-color: $white;
+        color: $primary;
+        &:hover{
+            background-color: $primary;
+            color: $white;
+        }
     }
 }
 
