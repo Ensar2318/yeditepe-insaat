@@ -257,6 +257,11 @@
         padding: 0 60px;
     }
 }
+.project-detail-content-container-v2 {
+    margin: auto;
+    max-width: 1444px;
+    padding: 0 20px;
+}
 .project-detail-galery {
     display: flex;
     flex-wrap: wrap;
@@ -317,7 +322,7 @@
     display: flex;
     justify-content: center;
     margin-top: 30px;
-    .swiper-pagination-bullet{
+    .swiper-pagination-bullet {
         min-width: 18px;
         min-height: 18px;
         border: solid 2px $white;
@@ -328,64 +333,82 @@
     }
 }
 
-.project-location-map{
+.project-location-map {
     width: 100%;
     height: 400px;
 }
-.newAndSaleProjectsSwiper{
-    .swiper-slide{
-        img{
+.newAndSaleProjectsSwiper {
+    .row{
+        @include media-down("lg"){
+            flex-direction: column-reverse;
+        }
+    }
+    .swiper-slide {
+        img {
             width: 100%;
             height: 490px;
             object-fit: cover;
             display: block;
+            @include media-down("lg"){
+                height: 300px;
+            }
         }
-        
-    } 
+    }
 }
-.newSalesProjectContent{
+.newSalesProjectContent {
     padding: 50px 60px 0 50px;
     background-color: $primary;
     color: $white;
-    @include media-down("lg"){
+    @include media-down("lg") {
         padding-bottom: 40px;
     }
-    @include media-down("sm"){
+    @include media-down("sm") {
         padding: 30px;
     }
-    .title{
+    .title {
         font-size: 28px;
         font-weight: 600px;
         margin-bottom: 30px;
     }
-    p{
+    p {
         font-size: 18px 400;
         height: 155px;
-        @include media-down("sm"){
-            height: 170px;
+        @include media-down("sm") {
+            height: 200px;
             padding-bottom: 20px;
             margin-bottom: 10px;
             overflow: auto;
         }
+        @include media-up-down("lg", "xl") {
+        height: 180px;
+        }
     }
-    .features{
+    .features {
         display: flex;
         justify-content: space-between;
         margin-bottom: 50px;
-        li{
+        li {
             display: flex;
             align-items: center;
             gap: 10px;
             font: 600 24px $barlow;
-            i{
+            i {
                 font-size: 40px;
             }
-        }
-        @include media-down("sm"){
-            li{
+            @include media-up-down("lg", "xl") {
                 font-size: 20px;
-                i{
-                    font-size: 26px;
+                i {
+                    font-size: 25px;
+                }
+            }
+        }
+        @include media-down("sm") {
+            margin-top: 20px;
+            li {
+                flex-wrap: wrap;
+                justify-content: center;
+                i {
+                    font-size: 30px;
                 }
             }
         }
