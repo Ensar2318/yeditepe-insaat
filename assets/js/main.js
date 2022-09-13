@@ -286,7 +286,28 @@ var blogFeaturesSwiper2 = new Swiper(".blogFeaturesSwiper2", {
     },
 });
 
-
+var plansSwiper = new Swiper(".plansSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    centeredSlides: true,
+    breakpoints: {
+    
+        570: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".plansSwiper-button-next",
+        prevEl: ".plansSwiper-button-prev",
+    },
+});
 
 // var indexHeroSwiper = new Swiper(".indexHeroSwiper", {
 //     slidesPerView: 3,

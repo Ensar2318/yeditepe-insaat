@@ -268,32 +268,32 @@ body {
 
 /* Text Colors */
 .text-ghost {
-  color: #ffffff !important;
-}
-
-/* Background Colors */
-.bg-ghost {
-  background-color: #ffffff !important;
-}
-
-/* Border Colors */
-.border-ghost {
-  border-color: #ffffff !important;
-}
-
-/* Text Colors */
-.text-white {
   color: #E6E6E6 !important;
 }
 
 /* Background Colors */
-.bg-white {
+.bg-ghost {
   background-color: #E6E6E6 !important;
 }
 
 /* Border Colors */
-.border-white {
+.border-ghost {
   border-color: #E6E6E6 !important;
+}
+
+/* Text Colors */
+.text-white {
+  color: #ffffff !important;
+}
+
+/* Background Colors */
+.bg-white {
+  background-color: #ffffff !important;
+}
+
+/* Border Colors */
+.border-white {
+  border-color: #ffffff !important;
 }
 
 .text-left {
@@ -3210,6 +3210,9 @@ footer .socials a:hover {
     font-size: 20px;
   }
 }
+.project-detail-content {
+  padding: 0 20px;
+}
 .project-detail-content.container-content {
   margin: auto;
   max-width: 950px;
@@ -3226,22 +3229,59 @@ footer .socials a:hover {
 .project-detail-preview-img {
   width: 100%;
   height: 650px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 1399px) {
+  .project-detail-preview-img {
+    height: 500px;
+  }
+}
+@media (max-width: 1199px) {
+  .project-detail-preview-img {
+    height: 400px;
+  }
+}
+@media (max-width: 991px) {
+  .project-detail-preview-img {
+    height: 300px;
+  }
 }
 
 .project-detail-content-container {
   margin: auto;
   max-width: 1300px;
 }
+.project-detail-content-container.padding-60 {
+  padding: 0 60px;
+}
 
 .project-detail-galery {
   display: flex;
   flex-wrap: wrap;
+  margin: 0 -4px;
 }
 .project-detail-galery .image {
   flex: 20%;
+  padding: 4px;
   overflow: hidden;
   cursor: pointer;
   display: flex;
+}
+@media (max-width: 1199px) {
+  .project-detail-galery .image {
+    flex: 25%;
+  }
+}
+@media (max-width: 767px) {
+  .project-detail-galery .image {
+    flex: 33%;
+  }
+}
+@media (max-width: 767px) {
+  .project-detail-galery .image {
+    flex: 50%;
+  }
 }
 .project-detail-galery .image:hover img {
   transform: scale(1.2);
@@ -3252,6 +3292,31 @@ footer .socials a:hover {
   -o-object-fit: cover;
      object-fit: cover;
   transition: 0.5s;
+}
+
+.plansSwiper {
+  margin: 0 -330px;
+}
+@media (max-width: 575px) {
+  .plansSwiper {
+    margin: 0;
+  }
+}
+
+.btn-positions {
+  position: relative;
+}
+.btn-positions .left-position {
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+}
+.btn-positions .right-position {
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
 }
 
 .morphext .animated {

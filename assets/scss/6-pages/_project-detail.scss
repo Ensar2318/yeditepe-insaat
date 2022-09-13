@@ -222,6 +222,7 @@
 }
 
 .project-detail-content {
+    padding: 0 20px;
     &.container-content {
         margin: auto;
         max-width: 950px;
@@ -238,21 +239,45 @@
 .project-detail-preview-img {
     width: 100%;
     height: 650px;
+    object-fit: cover;
+    @include media-down("xxl") {
+        height: 500px;
+    }
+    @include media-down("xl") {
+        height: 400px;
+    }
+    @include media-down("lg") {
+        height: 300px;
+    }
 }
 .project-detail-content-container {
     margin: auto;
     max-width: 1300px;
+    &.padding-60 {
+        padding: 0 60px;
+    }
 }
 .project-detail-galery {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -4px;
     .image {
-       flex: 20%;
+        flex: 20%;
+        padding: 4px;
         overflow: hidden;
         cursor: pointer;
         display: flex;
-        &:hover{
-            img{
+        @include media-down("xl") {
+            flex: 25%;
+        }
+        @include media-down("md") {
+            flex: 33%;
+        }
+        @include media-down("md") {
+            flex: 50%;
+        }
+        &:hover {
+            img {
                 transform: scale(1.2);
             }
         }
@@ -262,5 +287,28 @@
             object-fit: cover;
             transition: $transition;
         }
+    }
+}
+
+// Plains Swiper side
+.plansSwiper {
+    margin: 0 -330px;
+    @include media-down("sm") {
+        margin: 0;
+    }
+}
+.btn-positions {
+    position: relative;
+    .left-position {
+        position: absolute;
+        top: 50%;
+        left: -50px;
+        transform: translateY(-50%);
+    }
+    .right-position {
+        position: absolute;
+        top: 50%;
+        right: -50px;
+        transform: translateY(-50%);
     }
 }
