@@ -3,6 +3,11 @@ section {
     @include media-down("lg") {
         padding: 50px 0;
     }
+    &.pt-0-lg{
+        @include media-down("lg") {
+            padding: 0 0 50px 0;
+        }
+    }
 }
 
 .pagination-default {

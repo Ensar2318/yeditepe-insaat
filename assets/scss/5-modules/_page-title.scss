@@ -1,6 +1,5 @@
 .h3-title {
     font: 500 48px $barlow;
-   
 }
 .section-v1-content {
     padding-bottom: 80px;
@@ -9,20 +8,21 @@
         padding-left: 220px;
         padding-top: 60px;
         padding-bottom: 80px;
-        @include media-down("lg"){
+        @include media-down("lg") {
             padding-left: 10px;
         }
     }
-    &.owner{
-        padding-top: 0
+    &.owner {
+        padding-top: 0;
     }
     &.white {
         color: white;
     }
-    &.blog-hero{
+    &.blog-hero {
         padding-bottom: 0px;
-      padding-top: 20px;
+        padding-top: 20px;
     }
+
     @media (max-width: 1600px) {
         padding-left: 20px;
     }
@@ -44,7 +44,25 @@
     }
 }
 
-
+.section-v2-content {
+    padding: 40px;
+    &.white{
+        color: $white;
+    }
+    .sub-title {
+        color: $primary;
+        font: 500 20px $barlow;
+        margin-bottom: 18px;
+    }
+    .title {
+        font: 500 50px $barlow;
+        margin-bottom: 30px;
+        @include media-down("md") {
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+    }
+}
 @include media-down("sm") {
     .h3-title {
         font-size: 30px;

@@ -1,0 +1,83 @@
+.project-tab-below-section {
+    padding-top: 340px;
+    @include media-down("sm") {
+        padding-top: 189px;
+    }
+}
+.image-preview {
+    img {
+        width: 190px;
+        height: 190px;
+        object-fit: cover;
+    }
+}
+.project-preview-v1 {
+    &:not(.not-padding){
+        @include media-down("lg"){
+            padding-top: 0;
+        }
+    }
+   
+    .img-capsule {
+        img {
+            object-fit: cover;
+            width: 100%;
+            @include media-down("xxl") {
+                height: 500px;
+            }
+            @include media-down("xl") {
+                height: 400px;
+            }
+            @include media-down("lg") {
+                height: 300px;
+            }
+            @include media-down("md") {
+                height: 250px;
+            }
+        }
+    }
+}
+.project-preview-v2 {
+    background-color: $secondary-dark;
+    padding: 0;
+    background-image: url(../img/oppacity-seven.png);
+    background-repeat: no-repeat;
+    background-size: 675px;
+    @include media-down("lg") {
+        background-image: none;
+        padding-bottom: 0;
+    }
+    &.right-content {
+        background-position: 136% center;
+    }
+    &.left-content {
+        background-position: -40% center;
+
+        .row {
+            flex-direction: row-reverse;
+        }
+    }
+
+    .preview {
+        height: 700px;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        @include media-down("xxl") {
+            height: 500px;
+        }
+        @include media-down("xl") {
+            height: 400px;
+        }
+        @include media-down("lg") {
+            height: 300px;
+        }
+        @include media-down("md") {
+            height: 250px;
+        }
+    }
+    .content {
+        max-width: 420px;
+        margin: auto;
+    }
+}

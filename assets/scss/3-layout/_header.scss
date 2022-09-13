@@ -201,25 +201,25 @@ header {
     right: 0;
     display: flex;
     align-items: center;
-    @include media-down("lg"){
+    @include media-down("lg") {
         padding: 0 30px;
     }
-  
-    @include media-down("sm"){
+
+    @include media-down("sm") {
         min-height: 40px;
     }
     .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include media-down("md"){
-        justify-content: center;
+        @include media-down("md") {
+            justify-content: center;
         }
     }
     .title {
         font: 600 24px $barlow;
         color: $white;
-        @include media-down("md"){
+        @include media-down("md") {
             display: none;
         }
     }
@@ -243,6 +243,55 @@ header {
                 color: $white;
                 font-weight: 700;
             }
+        }
+    }
+}
+
+// Project Tab
+.project-tab {
+    position: absolute;
+    top: 175px;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    @include media-down("sm") {
+        top: 129px;
+    }
+    background-color: $light;
+    .p-container {
+        height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 22px;
+        max-width: 736px;
+        margin: auto;
+        @include media-down("sm") {
+            height: 60px;
+        }
+    }
+    a {
+        padding: 8px;
+        border-radius: 20px;
+        border: solid 2px $gray;
+        width: 100%;
+        text-align: center;
+        color: $black;
+        font-weight: 500;
+        transition: $transition;
+        @include media-down("sm") {
+            padding: 4px;
+            font-size: 16px;
+        }
+        &:hover {
+            color: $white;
+            background-color: $primary;
+            border-color: $primary;
+        }
+        &.active {
+            color: $white;
+            background-color: $primary;
+            border-color: $primary;
         }
     }
 }

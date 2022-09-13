@@ -983,6 +983,11 @@ section {
     padding: 50px 0;
   }
 }
+@media (max-width: 991px) {
+  section.pt-0-lg {
+    padding: 0 0 50px 0;
+  }
+}
 
 .pagination-default {
   position: relative;
@@ -1261,6 +1266,60 @@ header.light .navbar .nav-link.dropdown-active {
 .routing-area .routers-link a.active {
   color: #ffffff;
   font-weight: 700;
+}
+
+.project-tab {
+  position: absolute;
+  top: 175px;
+  left: 0;
+  right: 0;
+  padding: 0 20px;
+  background-color: #F5F5F5;
+}
+@media (max-width: 575px) {
+  .project-tab {
+    top: 129px;
+  }
+}
+.project-tab .p-container {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  max-width: 736px;
+  margin: auto;
+}
+@media (max-width: 575px) {
+  .project-tab .p-container {
+    height: 60px;
+  }
+}
+.project-tab a {
+  padding: 8px;
+  border-radius: 20px;
+  border: solid 2px #777777;
+  width: 100%;
+  text-align: center;
+  color: #2E2E2E;
+  font-weight: 500;
+  transition: 0.5s;
+}
+@media (max-width: 575px) {
+  .project-tab a {
+    padding: 4px;
+    font-size: 16px;
+  }
+}
+.project-tab a:hover {
+  color: #ffffff;
+  background-color: #D98563;
+  border-color: #D98563;
+}
+.project-tab a.active {
+  color: #ffffff;
+  background-color: #D98563;
+  border-color: #D98563;
 }
 
 .dropdown-wrap {
@@ -1589,6 +1648,28 @@ footer .socials a:hover {
 }
 @media (max-width: 767px) {
   .section-v1-content .title {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+}
+
+.section-v2-content {
+  padding: 40px;
+}
+.section-v2-content.white {
+  color: #ffffff;
+}
+.section-v2-content .sub-title {
+  color: #D98563;
+  font: 500 20px "barlow";
+  margin-bottom: 18px;
+}
+.section-v2-content .title {
+  font: 500 50px "barlow";
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .section-v2-content .title {
     margin-bottom: 20px;
     font-size: 30px;
   }
@@ -2816,6 +2897,107 @@ footer .socials a:hover {
   .blog-detail-hero-section .content {
     padding: 0 15px;
   }
+}
+
+.project-tab-below-section {
+  padding-top: 340px;
+}
+@media (max-width: 575px) {
+  .project-tab-below-section {
+    padding-top: 189px;
+  }
+}
+
+.image-preview img {
+  width: 190px;
+  height: 190px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .project-preview-v1:not(.not-padding) {
+    padding-top: 0;
+  }
+}
+.project-preview-v1 .img-capsule img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+@media (max-width: 1399px) {
+  .project-preview-v1 .img-capsule img {
+    height: 500px;
+  }
+}
+@media (max-width: 1199px) {
+  .project-preview-v1 .img-capsule img {
+    height: 400px;
+  }
+}
+@media (max-width: 991px) {
+  .project-preview-v1 .img-capsule img {
+    height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .project-preview-v1 .img-capsule img {
+    height: 250px;
+  }
+}
+
+.project-preview-v2 {
+  background-color: #162336;
+  padding: 0;
+  background-image: url(../img/oppacity-seven.png);
+  background-repeat: no-repeat;
+  background-size: 675px;
+}
+@media (max-width: 991px) {
+  .project-preview-v2 {
+    background-image: none;
+    padding-bottom: 0;
+  }
+}
+.project-preview-v2.right-content {
+  background-position: 136% center;
+}
+.project-preview-v2.left-content {
+  background-position: -40% center;
+}
+.project-preview-v2.left-content .row {
+  flex-direction: row-reverse;
+}
+.project-preview-v2 .preview {
+  height: 700px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+@media (max-width: 1399px) {
+  .project-preview-v2 .preview {
+    height: 500px;
+  }
+}
+@media (max-width: 1199px) {
+  .project-preview-v2 .preview {
+    height: 400px;
+  }
+}
+@media (max-width: 991px) {
+  .project-preview-v2 .preview {
+    height: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .project-preview-v2 .preview {
+    height: 250px;
+  }
+}
+.project-preview-v2 .content {
+  max-width: 420px;
+  margin: auto;
 }
 
 .morphext .animated {
