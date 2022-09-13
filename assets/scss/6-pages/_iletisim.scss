@@ -1,0 +1,145 @@
+.contact-details {
+    .title {
+        font: 500 38px $barlow;
+        margin-bottom: 60px;
+    }
+    .infos {
+        display: flex;
+        flex-direction: column;
+        gap: 26px;
+        margin-bottom: 50px;
+        .item {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            font: 500 18px $barlow;
+            i {
+                font-size: 28px;
+                color: $primary;
+            }
+        }
+    }
+    .socials {
+        display: flex;
+        gap: 17px;
+        font-size: 18px;
+        margin-bottom: 40px;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: solid 1px rgba($color: #b5b5b5, $alpha: 0.17);
+            transition: $transition;
+            width: 31px;
+            height: 31px;
+            border-radius: 3px;
+            color: $primary;
+            &:hover {
+                background-color: rgba($color: #b5b5b5, $alpha: 0.17);
+            }
+        }
+    }
+    .layer-icon {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        i {
+            font-size: 32px;
+            color: $primary;
+        }
+    }
+}
+.route-section-contact {
+    padding-top: 240px;
+    padding-bottom: 73px;
+}
+.map-frame {
+    max-width: 670px;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+}
+
+.contact-container {
+    max-width: 1300px;
+    margin: auto;
+}
+
+.contact-form-section{
+    background-image: url(../img/bg-seven.png), url(../img/bg-seven.png), url(../img/world-left.png),url(../img/world-right.png);
+    background-repeat: no-repeat;
+    background-size: 1100px, 1100px,auto,auto;
+    background-position: -80% -170%, 160% 552%,left 30%,right;
+    @include media-down("xxl"){
+        background-image: none;
+    }
+}
+
+.contact-form-container{
+    max-width: 950px;
+    margin: auto;
+}
+.contact-form{
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        *{
+            background-color: $light-100;
+            padding: 18px 23px;
+            font: 500 16px $barlow;
+            &::placeholder{
+                color: rgba($color: $black, $alpha: 0.5);
+            }
+        }
+    }
+}
+.radio-box{
+    text-align: center;
+    padding: 20px;
+    border: solid 1px $light;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    cursor: pointer;
+    font: 500 18px $barlow;
+    transition: $transition;
+    &:hover{
+        background-color: $light;
+    }
+}
+.radioAndText{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    cursor: pointer;
+    @include media-down("sm"){
+        align-items: flex-start;
+    }
+}
+.primary-radio{
+    min-width: 26px;
+    min-height: 26px;
+    accent-color: #c97654;
+    cursor: pointer;
+}
+
+
+
+@include media-down("lg") {
+    .route-section-contact {
+        padding-top: 190px;
+    }
+    .map-frame {
+    height: 400px;
+    max-width: 100%;
+    }
+}
+
+@include media-down("sm"){
+    .route-section-contact {
+        padding-top: 120px;
+    } 
+}
