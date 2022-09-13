@@ -9,6 +9,9 @@
         width: 190px;
         height: 190px;
         object-fit: cover;
+        @include media-down("sm"){
+            height: 90px;
+        }
     }
 }
 .project-preview-v1 {

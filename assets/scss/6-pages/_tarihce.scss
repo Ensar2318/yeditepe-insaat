@@ -92,6 +92,12 @@
 .owner-container{
     max-width: 1670px;
 }
+.setup-section{
+    padding-top: 100px 0;
+    @include media-down("lg"){
+        padding-top: 0px;
+    }
+}
 .setup-img{
     width: 800px;
     height: 800px;

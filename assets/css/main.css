@@ -1218,7 +1218,7 @@ header.light .navbar .nav-link.dropdown-active {
 }
 @media (max-width: 991px) {
   .routing-area {
-    padding: 0 30px;
+    padding: 8px 30px;
   }
 }
 @media (max-width: 575px) {
@@ -1618,6 +1618,11 @@ footer .socials a:hover {
 .section-v1-content {
   padding-bottom: 80px;
 }
+@media (max-width: 991px) {
+  .section-v1-content.tarihce-content {
+    padding: 40px 0 0 0;
+  }
+}
 .section-v1-content.about-page {
   padding-left: 220px;
   padding-top: 60px;
@@ -1630,6 +1635,11 @@ footer .socials a:hover {
 }
 .section-v1-content.owner {
   padding-top: 0;
+}
+@media (max-width: 991px) {
+  .section-v1-content.owner {
+    padding: 20px;
+  }
 }
 .section-v1-content.white {
   color: white;
@@ -1697,6 +1707,7 @@ footer .socials a:hover {
   align-items: center;
   gap: 8px;
   color: #D98563;
+  padding: 0 20px;
 }
 .primary-title i {
   font-size: 32px;
@@ -2543,6 +2554,15 @@ footer .socials a:hover {
   max-width: 1670px;
 }
 
+.setup-section {
+  padding-top: 100px 0;
+}
+@media (max-width: 991px) {
+  .setup-section {
+    padding-top: 0px;
+  }
+}
+
 .setup-img {
   width: 800px;
   height: 800px;
@@ -2935,6 +2955,11 @@ footer .socials a:hover {
   height: 190px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 575px) {
+  .image-preview img {
+    height: 90px;
+  }
 }
 
 @media (max-width: 991px) {

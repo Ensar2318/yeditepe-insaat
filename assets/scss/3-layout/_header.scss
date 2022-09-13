@@ -202,7 +202,7 @@ header {
     display: flex;
     align-items: center;
     @include media-down("lg") {
-        padding: 0 30px;
+        padding: 8px 30px;
     }
 
     @include media-down("sm") {
