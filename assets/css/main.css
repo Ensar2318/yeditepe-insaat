@@ -1437,6 +1437,7 @@ footer .socials a:hover {
   min-width: 230px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .btn-primary:hover {
   background-color: rgba(217, 133, 99, 0.6);
@@ -1465,6 +1466,7 @@ footer .socials a:hover {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   transition: 0.5s;
+  cursor: pointer;
 }
 .btn-blur.bordered {
   border: solid 2px #ffffff;
@@ -1513,6 +1515,7 @@ footer .socials a:hover {
   font-size: 24px;
   color: #D98563;
   transition: 0.5s;
+  cursor: pointer;
 }
 .b-nav-btn:hover {
   background-color: rgba(245, 245, 245, 0.5);

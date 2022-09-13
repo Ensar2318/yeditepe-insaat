@@ -253,10 +253,9 @@
         $(document).ready(function () {
             for (let index = 1; index <= 8; index++) {
                 content = `<div class="col-lg-3 col-md-4 col-sm-6">
-                        <div class="blog-card">
                             <div class="blog-card">
                                 <div class="head">
-                                    <img src="assets/img/blogs/blog-`+index+`.png">
+                                    <img src="assets/img/blogs/blog-`+ index + `.png">
                                 </div>
                                 <div class="content">
                                     <span class="date">06.11.2022</span>
@@ -268,9 +267,8 @@
                                     <a href="blog-detay.html"> Devamını Oku <i class="icon-Path3662"></i></a>
                                 </div>
                             </div>
-                        </div>
-                    </div>`;
-                    $(".blogs-list .row").append(content);
+                        </div>`;
+                $(".blogs-list .row").append(content);
             }
         });
     </script>

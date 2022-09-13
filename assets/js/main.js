@@ -113,7 +113,6 @@ var misyonSwiper = new Swiper(".misyonSwiper", {
 });
 
 
-
 var blogFeaturesSwiper = new Swiper(".blogFeaturesSwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
@@ -257,6 +256,35 @@ var blogHeroSwiper = new Swiper(".blogHeroSwiper", {
 
 });
 
+var blogFeaturesSwiper2 = new Swiper(".blogFeaturesSwiper2", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    autoplay: {
+        delay: 4000,
+        disableOnInteraction: true,
+    },
+    breakpoints: {
+        780: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        982: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+        }
+       
+    },
+    navigation: {
+        nextEl: ".blogFeaturesSwiper2-button-next",
+        prevEl: ".blogFeaturesSwiper2-button-prev",
+    },
+});
 
 
 
