@@ -300,12 +300,24 @@ var plansSwiper = new Swiper(".plansSwiper", {
         },
     },
     pagination: {
-        el: ".swiper-pagination",
+        el: ".plain-pagination",
         clickable: true,
     },
     navigation: {
         nextEl: ".plansSwiper-button-next",
         prevEl: ".plansSwiper-button-prev",
+    },
+});
+
+var newAndSaleProjectsSwiper = new Swiper(".newAndSaleProjectsSwiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    speed:800,
+    navigation: {
+        nextEl: ".newAndSaleProjectsSwiper-button-next",
+        prevEl: ".newAndSaleProjectsSwiper-button-prev",
     },
 });
 

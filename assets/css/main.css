@@ -1501,6 +1501,13 @@ footer .socials a:hover {
 .btn-primary:hover {
   background-color: rgba(217, 133, 99, 0.6);
 }
+.btn-primary.white {
+  background-color: #ffffff;
+  color: #D98563;
+}
+.btn-primary.white:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 .btn-primary i {
   font-size: 18px;
 }
@@ -1602,6 +1609,10 @@ footer .socials a:hover {
 
 .h3-title {
   font: 500 48px "barlow";
+}
+
+.h5-title {
+  font-size: 28px;
 }
 
 .section-v1-content {
@@ -3317,6 +3328,89 @@ footer .socials a:hover {
   top: 50%;
   right: -50px;
   transform: translateY(-50%);
+}
+
+.plain-pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.plain-pagination .swiper-pagination-bullet {
+  min-width: 18px;
+  min-height: 18px;
+  border: solid 2px #ffffff;
+  background: none;
+}
+.plain-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #ffffff;
+}
+
+.project-location-map {
+  width: 100%;
+  height: 400px;
+}
+
+.newAndSaleProjectsSwiper .swiper-slide img {
+  width: 100%;
+  height: 490px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.newSalesProjectContent {
+  padding: 50px 60px 0 50px;
+  background-color: #D98563;
+  color: #ffffff;
+}
+@media (max-width: 991px) {
+  .newSalesProjectContent {
+    padding-bottom: 40px;
+  }
+}
+@media (max-width: 575px) {
+  .newSalesProjectContent {
+    padding: 30px;
+  }
+}
+.newSalesProjectContent .title {
+  font-size: 28px;
+  font-weight: 600px;
+  margin-bottom: 30px;
+}
+.newSalesProjectContent p {
+  font-size: 18px 400;
+  height: 155px;
+}
+@media (max-width: 575px) {
+  .newSalesProjectContent p {
+    height: 170px;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    overflow: auto;
+  }
+}
+.newSalesProjectContent .features {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.newSalesProjectContent .features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 600 24px "barlow";
+}
+.newSalesProjectContent .features li i {
+  font-size: 40px;
+}
+@media (max-width: 575px) {
+  .newSalesProjectContent .features li {
+    font-size: 20px;
+  }
+  .newSalesProjectContent .features li i {
+    font-size: 26px;
+  }
 }
 
 .morphext .animated {
