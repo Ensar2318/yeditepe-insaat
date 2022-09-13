@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="assets/vendor/bootstrap-5.1.3/css/bootstrap-grid.css">
     <link rel="stylesheet" href="assets/vendor/swipperjs/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/vendor/icomoon/style.css">
+    <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
     <!-- Main Css Files -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -124,7 +125,7 @@
             <div class="project-detail-content-container">
                 <img class="project-detail-preview-img" src="assets/img/project-detail/other-project.png">
                 <div class="project-detail-content mt-4">
-                    <span class="primary-title"><i class="icon-mesure"></i> Konsept</span>
+                    <span class="primary-title mb-4"><i class="icon-mesure"></i> Konsept</span>
                     <p>Yedi Yapı, bölgenin değerine yakışan standartlar ile Yedi Yapı güvencesiyle hayat buluyor,
                         şehrin yeni ikonlarından biri olmaya aday cazibesiyle ise adeta Kayseri’ye göz kırpıyor!</p>
                     <p>Göz alıcı mimari ve fonksiyonelliğin ön plana çıktığı bu Cadde’de lokasyonun avantajlarından
@@ -146,8 +147,16 @@
     <!-- =========== project detail content END =========== -->
 
     <!-- =========== Project Galery START =========== -->
-    <section>
-        
+    <section class="bg-light">
+        <div class="project-detail-content-container">
+            <h5 class="primary-title mb-4"><i class="icon-image"></i> Proje Galerisi</h5>
+            <div class="project-detail-galery">
+                <!-- <a href="" class="image">
+                    <img src="assets/img/project-detail/gallery/img-1.png">
+                </a> -->
+
+            </div>
+        </div>
     </section>
     <!-- =========== Project Galery END =========== -->
 
@@ -224,13 +233,38 @@
     <script src="assets/vendor/jquerry/jquery-3.6.0.min.js"></script>
     <script src="assets/vendor/swipperjs/swiper-bundle.min.js"></script>
     <script src="assets/vendor/waypoint/jquery.waypoints.js"></script>
-
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <!-- Main Js Source File -->
     <script src="assets/js/main.js"></script>
 
     <script>
+        $(document).ready(function () {
+            let number = 1;
 
+            for (let index = 1; index <= 15; index++) {
+
+                let content = `
+                <a class="glightbox image" href="assets/img/project-detail/gallery/img-`+ number + `.png" >
+                    <img src="assets/img/project-detail/gallery/img-`+ number + `.png">
+                </a>`;
+
+                $(".project-detail-galery").append(content);
+                number++;
+
+                if (number == 6) {
+                    number = 1;
+                }
+
+
+            }
+            const lightbox = GLightbox({
+                touchNavigation: true,
+                loop: true,
+                autoplayVideos: true
+            });
+        });
     </script>
+
 
 </body>
 

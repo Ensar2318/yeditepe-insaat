@@ -1686,7 +1686,6 @@ footer .socials a:hover {
   align-items: center;
   gap: 8px;
   color: #D98563;
-  margin-bottom: 30px;
 }
 .primary-title i {
   font-size: 32px;
@@ -3232,6 +3231,27 @@ footer .socials a:hover {
 .project-detail-content-container {
   margin: auto;
   max-width: 1300px;
+}
+
+.project-detail-galery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-detail-galery .image {
+  flex: 20%;
+  overflow: hidden;
+  cursor: pointer;
+  display: flex;
+}
+.project-detail-galery .image:hover img {
+  transform: scale(1.2);
+}
+.project-detail-galery .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
 }
 
 .morphext .animated {
