@@ -1822,6 +1822,8 @@ footer .socials a:hover {
   position: relative;
   display: flex;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .index-hero-section::before {
   content: "";
@@ -2120,6 +2122,8 @@ footer .socials a:hover {
 
 .misyon-wrap {
   height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .misyon-wrap::after {
   content: "";
@@ -2940,6 +2944,9 @@ footer .socials a:hover {
   .blog-detail-hero-section .content {
     padding: 0 15px;
   }
+  .blog-detail-hero-section .content p {
+    font-size: 18px;
+  }
 }
 
 .project-tab-below-section {
@@ -3134,6 +3141,13 @@ footer .socials a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 575px) {
+  .project-detail-hero .below-content .below-content-container {
+    justify-content: center;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
 }
 .project-detail-hero .below-content .below-content-container li {
   display: flex;

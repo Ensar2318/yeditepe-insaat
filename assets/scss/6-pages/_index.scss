@@ -3,7 +3,8 @@
     position: relative;
     display: flex;
     align-items: center;
-
+    background-repeat: no-repeat;
+    background-size: cover;
     &::before {
         content: "";
         background: rgb(0, 0, 0);
@@ -279,7 +280,8 @@
 }
 .misyon-wrap {
     height: 100%;
-
+    background-repeat: no-repeat;
+    background-size: cover;
     &::after {
         content: "";
         background: rgb(0, 0, 0);
@@ -484,7 +486,6 @@
             }
         }
     }
- 
 }
 
 @include media-down("sm") {
@@ -575,13 +576,12 @@
     padding: 10px;
 }
 
-
-.brandSwiper  {
+.brandSwiper {
     margin-top: 50px;
     margin-left: -120px;
     margin-right: -120px;
     text-align: center;
-    @include media-down("sm"){
+    @include media-down("sm") {
         margin-left: 0;
         margin-right: 0;
     }

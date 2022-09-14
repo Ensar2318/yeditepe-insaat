@@ -290,6 +290,7 @@ var plansSwiper = new Swiper(".plansSwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
+    speed:800,
     loopFillGroupWithBlank: true,
     centeredSlides: true,
     breakpoints: {
