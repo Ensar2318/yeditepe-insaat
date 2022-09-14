@@ -3093,7 +3093,7 @@ footer .socials a:hover {
   text-align: center;
 }
 .project-detail-hero .content .title {
-  font: 300 136px "barlow";
+  font: 300 136px "times new roman";
   color: #ffffff;
   letter-spacing: 20px;
 }
@@ -3217,6 +3217,9 @@ footer .socials a:hover {
   .project-detail-hero .content {
     top: 27%;
   }
+  .project-detail-hero .content .title {
+    font-size: 60px;
+  }
   .project-detail-hero .content .icons-container li {
     font-size: 24px;
   }
@@ -3232,8 +3235,9 @@ footer .socials a:hover {
     top: 23%;
   }
   .project-detail-hero .content .title {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 500;
+    letter-spacing: 10px;
   }
   .project-detail-hero .content .icons-container {
     padding: 0 20px;
