@@ -32,6 +32,14 @@ $(document).ready(function () {
         desktopDropdown();
     }
     // Desktop Dropdown Content
+    
+    // Aos init
+    AOS.init({
+        duration: 1200,
+        once: false,
+        mirror: false,
+        ofset: 6
+    });
 
 });
 
@@ -278,7 +286,7 @@ var blogFeaturesSwiper2 = new Swiper(".blogFeaturesSwiper2", {
             slidesPerView: 4,
             spaceBetween: 20,
         }
-       
+
     },
     navigation: {
         nextEl: ".blogFeaturesSwiper2-button-next",
@@ -290,11 +298,11 @@ var plansSwiper = new Swiper(".plansSwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
-    speed:800,
+    speed: 800,
     loopFillGroupWithBlank: true,
     centeredSlides: true,
     breakpoints: {
-    
+
         570: {
             slidesPerView: 3,
             spaceBetween: 20,
@@ -315,7 +323,7 @@ var newAndSaleProjectsSwiper = new Swiper(".newAndSaleProjectsSwiper", {
     spaceBetween: 20,
     loop: true,
     loopFillGroupWithBlank: true,
-    speed:800,
+    speed: 800,
     navigation: {
         nextEl: ".newAndSaleProjectsSwiper-button-next",
         prevEl: ".newAndSaleProjectsSwiper-button-prev",
@@ -353,3 +361,5 @@ const lightbox = GLightbox({
     loop: true,
     autoplayVideos: true
 });
+
+
