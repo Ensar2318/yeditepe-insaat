@@ -3310,6 +3310,11 @@ footer .socials a:hover {
 .project-detail-content-container.padding-60 {
   padding: 0 60px;
 }
+@media (max-width: 575px) {
+  .project-detail-content-container.padding-60 {
+    padding: 0 20px;
+  }
+}
 
 .project-detail-content-container-v2 {
   margin: auto;

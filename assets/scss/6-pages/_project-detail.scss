@@ -263,6 +263,9 @@
     max-width: 1300px;
     &.padding-60 {
         padding: 0 60px;
+        @include media-down("sm"){
+            padding: 0 20px;
+        }
     }
 }
 .project-detail-content-container-v2 {
