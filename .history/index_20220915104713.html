@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Yeditepe</title>
+
+    <!-- Vendor  Css files -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap-5.1.3/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="assets/vendor/swipperjs/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/icomoon/style.css">
+    <link rel="stylesheet" href="assets/vendor/glightbox/css/glightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/vendor/aos/aos.css">
+    <!-- Main Css Files -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- =========== Header Side =========== -->
+    <header class="dark">
+        <div class="container d-flex align-items-center flex-lg-nowrap flex-wrap justify-content-between">
+            <a class="logo" href="index.html"> <img src="assets/img/logo.png" alt="logo"></a>
+            <a href="#" class="mobile-btn d-block d-lg-none">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
+                    <path
+                        d="M112 160h288c8.833 0 16-7.167 16-16s-7.167-16-16-16h-288c-8.833 0-16 7.167-16 16s7.167 16 16 16zM400 192h-288c-8.833 0-16 7.167-16 16s7.167 16 16 16h288c8.833 0 16-7.167 16-16s-7.167-16-16-16zM400 256h-288c-8.833 0-16 7.167-16 16s7.167 16 16 16h288c8.833 0 16-7.167 16-16s-7.167-16-16-16zM400 320h-288c-8.833 0-16 7.167-16 16s7.167 16 16 16h288c8.833 0 16-7.167 16-16s-7.167-16-16-16z">
+                    </path>
+                </svg>
+            </a>
+            <nav class="nav">
+                <ol class="navbar">
+                    <li class="dropdown">
+                        <a class="nav-link" href="#about">Hakkında <i class="dropdown-icon icon-chevron-left"></i></a>
+                        <div class="link-dropdown-content">
+                            <ol>
+                                <li><a href="biz-kimiz.html">Biz Kimiz?</a></li>
+                                <li><a href="tarihce.html">Tarihçe</a></li>
+                                <li><a href="yonetim-kurulu.html">Yönetim Kurulu</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li><a class="nav-link" href="projelerimiz.html">Projelerimiz</a></li>
+                    <li><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <!-- Dropdown -->
+    <div class="dropdown-wrap">
+        <div id="about" class="dropdown-content">
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <div class="links">
+                        <a href="biz-kimiz.html">Biz Kimiz? <i class="icon-chevron-right"></i></a>
+                        <a href="tarihce.html">Tarihçe <i class="icon-chevron-right"></i></a>
+                        <a href="yonetim-kurulu.html">Yönetim Kurulu <i class="icon-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                    <img class="dropdown-img" src="assets/img/dropdown-img.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Header Side END -->
+
+
+    <!-- =========== Hero Side =========== -->
+    <section class="pt-0 pb-0">
+        <video loop muted autoplay preload="auto">
+            <source src="assets/compressed.mp4" type="video/mp4">
+        </video>
+        <div class="index-hero-section video-hero-section">
+            <div class="content animate__animated animate__fadeInLeft">
+                <h1 class="title ">Geleceğe <br class="d-none d-lg-block"> Bir Adım</h1>
+                <p>Yedi Yapı’nın sürdürülebilir, kârlı büyüme yaklaşımı olan Geleceğe. Birlikte; gücünü
+                    yaratacağımız dönüşümden ve iş birliklerine olan inancımızdan alıyor.</p>
+
+                <a href="proje-detay.html" class="btn-blur bordered ">Detaylı Bilgi</a>
+
+            </div>
+        </div>
+    </section>
+    <!-- Hero Side END -->
+
+    <!-- =========== Hero Side =========== -->
+    <section class="pt-0 pb-0">
+        <div class="swiper indexHeroSwiper">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="index-hero-section" style="background-image: url(assets/img/index/hero.png);">
+                        <div class="container position-relative">
+                            <div class="content animate__animated animate__fadeInLeft">
+                                <h1 class="title ">Geleceğe <br class="d-none d-lg-block"> Bir Adım</h1>
+                                <p>Yedi Yapı’nın sürdürülebilir, kârlı büyüme yaklaşımı olan Geleceğe. Birlikte; gücünü
+                                    yaratacağımız dönüşümden ve iş birliklerine olan inancımızdan alıyor.</p>
+                                <a href="proje-detay.html" class="btn-blur bordered ">Detaylı Bilgi</a>
+                                <div class="redirect">
+                                    <a class="btn-redirect indexHeroSwiper-button-prev" href="#"><i
+                                            class="icon-chevron-left"></i></a>
+                                    <a class="btn-redirect indexHeroSwiper-button-next" href="#"><i
+                                            class="icon-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="index-hero-section" style="background-image: url(assets/img/index/misyon.png);">
+                        <div class="container position-relative">
+                            <div class="content">
+                                <h1 class="title">Yeniden <br class="d-none d-lg-block"> yaratılış</h1>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo ex nam qui odit
+                                    ducimus, numquam repellat veritatis quasi?</p>
+                                <a href="proje-detay.html" class="btn-blur bordered ">Detaylı Bilgi</a>
+                                <div class="redirect">
+                                    <a class="btn-redirect indexHeroSwiper-button-prev" href="#"><i
+                                            class="icon-chevron-left"></i></a>
+                                    <a class="btn-redirect indexHeroSwiper-button-next" href="#"><i
+                                            class="icon-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Hero Side END -->
+
+    <!-- =========== About improvements START =========== -->
+    <section class="about-improvements-section">
+        <div class="container">
+            <div class="row gy-3 px-lg-5">
+                <div class="col-lg col-sm-4 col-6" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
+                    <div class="about-border-card">
+                        <img src="assets/img/svg/building.svg">
+                        <p>Gayrimenkul</p>
+                    </div>
+                </div>
+                <div class="col-lg col-sm-4 col-6" data-aos="zoom-in" data-aos-delay="200" data-aos-once="true">
+                    <div class="about-border-card">
+                        <img src="assets/img/svg/dart.svg">
+                        <p>İstikrar</p>
+                    </div>
+                </div>
+                <div class="col-lg col-sm-4 col-6" data-aos="zoom-in" data-aos-delay="300" data-aos-once="true">
+                    <div class="about-border-card">
+                        <img src="assets/img/svg/build.svg">
+                        <p>İnşaat</p>
+                    </div>
+                </div>
+                <div class="col-lg col-sm-4 col-6" data-aos="zoom-in" data-aos-delay="400" data-aos-once="true">
+                    <div class="about-border-card">
+                        <img src="assets/img/svg/tech.svg">
+                        <p>Teknoloji</p>
+                    </div>
+                </div>
+                <div class="col-lg col-sm-4 col-6" data-aos="zoom-in" data-aos-delay="500" data-aos-once="true">
+                    <div class="about-border-card">
+                        <img src="assets/img/svg/bulb.svg">
+                        <p>İnovasyon</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="row gy-md-5 gy-3">
+                    <div class="col-lg-4 d-flex justify-content-center flex-column center" data-aos="fade-right"
+                        data-aos-duration="2000" data-aos-once="true">
+                        <h1 class="title">Hakkımızda Gelişmeler</h1>
+                        <p class="font-500">Müşterilerimiz, iş ortaklarımız ve çalışanlarımız için dijital dönüşüm
+                            hedeflerimiz ve projelerimiz.</p>
+                    </div>
+                    <div class="col-lg-8 d-flex align-items-center" data-aos="fade-left" data-aos-duration="2000"
+                        data-aos-once="true">
+                        <img src="assets/img/index/about-img.png" class="d-none d-md-block">
+                        <div class="content">
+                            <p>İnsanlar; toplumsal yaşam şeklini ve bulundukları kültürel ve sosyal
+                                değerlerini, o topluma ideal bir biçimde hazırlanan eğitimle
+                                öğrenmektedirler. Eğitimin ana ve en mühim şeklinde kabul edilen
+                                işleviyse; toplumsal devamlılık, kültürel değerler, bütünlük
+                                sağlanarak bilimsel teknolojik gelişmelere bağlı olan kalıp kültürün
+                                gelişimin sağlanarak yeni bireyler yetiştirmektir.
+                            </p>
+                            <a class="read-more" href="biz-kimiz.html">Devamını Oku <i
+                                    class="icon-chevron-right ms-2"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =========== About improvements END =========== -->
+
+    <!-- =========== WHY US START =========== -->
+    <section class="p-0 why-us-section" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+        <div class="swiper whyUsSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="row g-0">
+                        <div class="col-lg-6 d-flex order-1 order-lg-0">
+                            <div class="why-us-wrap">
+                                <h3 class="title">Neden Yedi Yapı?</h3>
+                                <p>Ülkemizin yüksek büyüme potansiyeline yatırım yapmak isteyenler için
+                                    en iyi alternatiflerden biri. sağlanarak bilimsel teknolojik gelişmelere bağlı olan
+                                    kalıp
+                                    kültürünİnsanlar; toplumsal yaşam şeklini ve bulundukları kültürel ve sosyal
+                                    değerlerini...
+                                </p>
+                                <a href="biz-kimiz.html" class="btn-blur">Detaylı Bilgi</a>
+                                <div class="redirect">
+                                    <a class="btn-redirect whyUsSwiper-button-prev" href="#"><i
+                                            class="icon-chevron-left"></i></a>
+                                    <a class="btn-redirect whyUsSwiper-button-next" href="#"><i
+                                            class="icon-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 why-us-image-side  order-0 order-lg-1">
+                            <img src="assets/img/index/why-us.png">
+                            <a href="biz-kimiz.html" class="content">
+                                <div>
+                                    <h4 class="title">Yedi Yapı Garden</h4>
+                                    <span class="sub">2018</span>
+                                </div>
+                                <i class="icon-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="row g-0">
+                        <div class="col-lg-6 d-flex order-1 order-lg-0">
+                            <div class="why-us-wrap">
+                                <h3 class="title">Neden Biz</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur suscipit, quam
+                                    tempora ab laudantium voluptatum saepe et deserunt commodi error, obcaecati,
+                                    reiciendis numquam velit ea non qui necessitatibus atque architecto.
+                                </p>
+                                <a href="biz-kimiz.html" class="btn-blur">Detaylı Bilgi</a>
+                                <div class="redirect">
+                                    <a class="btn-redirect whyUsSwiper-button-prev" href="#"><i
+                                            class="icon-chevron-left"></i></a>
+                                    <a class="btn-redirect whyUsSwiper-button-next" href="#"><i
+                                            class="icon-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 why-us-image-side  order-0 order-lg-1">
+                            <img src="assets/img/index/misyon.png">
+                            <a href="biz-kimiz.html" class="content">
+                                <div>
+                                    <h4 class="title">Yeni Şehir</h4>
+                                    <span class="sub">2018</span>
+                                </div>
+                                <i class="icon-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- =========== WHY US END =========== -->
+
+    <!-- =========== Misyon START =========== -->
+    <section class="misyon-section">
+        <div class="swiper misyonSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="misyon-wrap" style="background-image: url(assets/img/index/misyon.png);">
+                        <div class="container">
+                            <a href="https://www.youtube.com/watch?v=un3NkWnHl9Q" class="play-btn glightbox"><i
+                                    class="icon-play"></i></a>
+                            <div class="content">
+                                <h3 class="title">Misyonumuz</h3>
+                                <p>Ülkemizin Yüksek Büyüme Potansiyeline Yatırım Yapmak Isteyenler Için En Iyi
+                                    Alternatiflerden
+                                    Biri. Sağlanarak Bilimsel Teknolojik Gelişmelere Bağlı Olan Kalıp Kültürüninsanlar;
+                                    Toplumsal
+                                    Yaşam Şeklini Ve Bulundukları Kültürel Ve Sosyal Değerlerini…</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="misyon-wrap" style="background-image: url(assets/img/index/hero.png);">
+                        <div class="container">
+                            <a href="https://www.youtube.com/watch?v=un3NkWnHl9Q" class="play-btn glightbox"><i
+                                    class="icon-play"></i></a>
+                            <div class="content">
+                                <h3 class="title">Misyonumuz</h3>
+                                <p>Ülkemizin Yüksek Büyüme Potansiyeline Yatırım Yapmak Isteyenler Için En Iyi
+                                    Alternatiflerden
+                                    Biri. Sağlanarak Bilimsel Teknolojik Gelişmelere Bağlı Olan Kalıp Kültürüninsanlar;
+                                    Toplumsal
+                                    Yaşam Şeklini Ve Bulundukları Kültürel Ve Sosyal Değerlerini…</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- =========== Misyon END =========== -->
+
+    <!-- =========== Our Projects START =========== -->
+    <section class="index-our-project">
+        <div class="container">
+            <div class="text-center mb-40" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+                <h3 class="h3-title mb-10">Projelerimiz</h3>
+                <a href="projelerimiz.html" class="text-primary font-600">Tümünü gör</a>
+            </div>
+            <div class="projects-list">
+                <div class="row gy-4">
+                    <div class="col-lg-6 project-content-container order-1 order-lg-0" data-aos-duration="2000"
+                        data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
+                        <div class="content">
+                            <h3 class="h3-title mb-20">Ankara Rovens Konutları</h3>
+                            <p>Yatırımları, güçlü markaları ve tüketicilere verdiği değer ile büyüyen
+                                Türkiye’nin enerjisi. Geleceği belirleyecek kadar farklıyız.</p>
+                            <a class="btn-primary" href="proje-detay.html">Detaylı Bilgi <i
+                                    class="icon-Path3662"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6  order-0 order-lg-1 p-0 p-lg-3" data-aos-duration="2000" data-aos="fade-left"
+                        data-aos-delay="200" data-aos-once="true">
+                        <div class="img-capsule">
+                            <img src="assets/img/projects/project-1.png">
+                            <div class="back-object"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row gy-4 ">
+                    <div class="col-lg-6 project-content-container order-1 order-lg-0" data-aos-duration="2000"
+                        data-aos="fade-left" data-aos-delay="200" data-aos-once="true">
+                        <div class="content">
+                            <h3 class="h3-title mb-20">7 Yapı Yaşam Evleri</h3>
+                            <p>Yatırımları, güçlü markaları ve tüketicilere verdiği değer ile büyüyen
+                                Türkiye’nin enerjisi. Geleceği belirleyecek kadar farklıyız.</p>
+                            <a class="btn-primary" href="proje-detay.html">Detaylı Bilgi <i
+                                    class="icon-Path3662"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6  order-0 order-lg-1 p-0 p-lg-3" data-aos-duration="2000" data-aos="fade-right"
+                        data-aos-delay="200" data-aos-once="true">
+                        <div class="img-capsule">
+                            <img src="assets/img/projects/project-2.png">
+                            <div class="back-object"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- =========== Our Projects END =========== -->
+
+    <!-- =========== CTA START =========== -->
+    <section class="cta-section">
+        <div class="container-fluid">
+            <div class="row gy-5">
+                <div class="col-xxl-4 col-md-6" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">
+                    <p>
+                        1975 yılında inşaat sektörüne giren Yedi Yapı, iş dünyasındaki vizyonuyla, kısa sürede inşaat
+                        sektöründe adı güven ve kaliteyle anılan bir şirket konumuna yükseldi. Yüzde yüz yerli
+                        sermayeyle, sektöre modern ve kullanışlı yaşam alanları kazandırmayı amaçlayan Yedi Yapı,
+                        İstanbul’da birçok prestijli projeye imza attı. Müşteri odaklı hizmet anlayışı..
+                    </p>
+                </div>
+                <div class="col-xxl-8 text-end col-md-6" data-aos="fade-left" data-aos-duration="2000"
+                    data-aos-once="true">
+                    <img src="assets/img/cta-img.png">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- =========== CTA END =========== -->
+
+    <!-- =========== Blog START =========== -->
+    <section class="blog-section">
+        <div class="text-center mb-40" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+            <h3 class="h3-title mb-20">
+                Blog
+            </h3>
+            <p>Güncel haberler, kurumsal yayınlarımızı basın bültenleri ve daha fazlası.</p>
+        </div>
+        <div class="blog-swiper-wrap">
+            <a data-aos="fade-right" data-aos-duration="2000" data-aos-once="true"
+                class="b-nav-btn blogFeaturesSwiper-button-prev" href="#"><i class="icon-chevron-left"></i></a>
+            <div class="container m-0">
+                <div class="swiper blogFeaturesSwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                            <div class="blog-card small">
+                                <div class="head">
+                                    <img src="assets/img/blogs/blog-1.png">
+                                </div>
+                                <div class="content">
+                                    <span class="date">13.04.2021</span>
+                                    <h5 class="title">CNR Expo 8.Hall 208. Standayız</h5>
+                                </div>
+                                <div class="link">
+                                    <a href="blog-detay.html"> Devamını Oku <i class="icon-Path3662"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100"
+                            data-aos-once="true">
+                            <div class="blog-card small">
+                                <div class="head">
+                                    <img src="assets/img/blogs/blog-2.png">
+                                </div>
+                                <div class="content">
+                                    <span class="date">13.04.2021</span>
+                                    <h5 class="title">Yedi Yapı, 350 milyon dolara şehrin sembolünü yapacak</h5>
+                                </div>
+                                <div class="link">
+                                    <a href="blog-detay.html"> Devamını Oku <i class="icon-Path3662"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200"
+                            data-aos-once="true">
+                            <div class="blog-card small">
+                                <div class="head">
+                                    <img src="assets/img/blogs/blog-3.png">
+                                </div>
+                                <div class="content">
+                                    <span class="date">13.04.2021</span>
+                                    <h5 class="title">Park Mavera açılış için son
+                                        15 gün Geri sayım</h5>
+                                </div>
+                                <div class="link">
+                                    <a href="blog-detay.html"> Devamını Oku <i class="icon-Path3662"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="300"
+                            data-aos-once="true">
+                            <div class="blog-card small">
+                                <div class="head">
+                                    <img src="assets/img/blogs/blog-4.png">
+                                </div>
+                                <div class="content">
+                                    <span class="date">13.04.2021</span>
+                                    <h5 class="title">Yedi Yapı Kripto para ile ödeme alacak mı? </h5>
+                                </div>
+                                <div class="link">
+                                    <a href="blog-detay.html"> Devamını Oku <i class="icon-Path3662"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400"
+                            data-aos-once="true">
+                            <div class="blog-card small">
+                                <div class="head">
+                                    <img src="assets/img/blogs/blog-5.png">
+                                </div>
+                                <div class="content">
+                                    <span class="date">13.04.2021</span>
+                                    <h5 class="title">Teknoloji çiftliğimizi 2024’de
+                                        hazır hale geliyor</h5>
+                                </div>
+                                <div class="link">
+                                    <a href="blog-detay.html"> Devamını Oku <i class="icon-Path3662"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination pagination-default d-flex d-lg-none"></div>
+
+                </div>
+            </div>
+            <a data-aos="fade-left" data-aos-duration="2000" data-aos-once="true"
+                class="b-nav-btn blogFeaturesSwiper-button-next" href="#"><i class="icon-chevron-right"></i></a>
+        </div>
+        <div class="text-center mt-40">
+            <a data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" href="blog.html"
+                class="btn-rounded-redirect">Tüm Haberler <i class="icon-Path3662"> </i></a>
+        </div>
+    </section>
+    <!-- =========== Blog END =========== -->
+
+    <!-- =========== We Brands START =========== -->
+    <section>
+        <h3 data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" class="h3-title text-center">Markalarımız
+        </h3>
+        <div class="overflow-hidden" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="100"
+            data-aos-once="true">
+            <div class="swiper brandSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="assets/img/references/ref-1.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/references/ref-2.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/references/ref-3.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/references/ref-4.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/references/ref-5.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/references/ref-6.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/references/ref-4.png">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="assets/img/references/ref-2.png">
+                    </div>
+                </div>
+                <div class="swiper-pagination pagination-default d-lg-none d-flex"></div>
+            </div>
+        </div>
+    </section>
+    <!-- =========== We Brands END =========== -->
+
+
+
+
+    <!-- =========== Footer Side  =========== -->
+    <footer>
+        <div class="container">
+            <div class="row gy-4 justify-content-between">
+
+                <div class="col-lg-2 col-sm-6 d-flex align-items-center">
+                    <a href="index.html"><img src="assets/img/footer-logo.png" alt="logo"></a>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <h4 class="footer-title">Bizimle iletişime geçin</h4>
+                    <p class="mb-20">Yedi Yapı</p>
+                    <div class="layer-icon">
+                        <i class="icon-pin"></i>
+                        <p>Ersun Yapılar Merkezi A4 Blok, Kat : 14 D:337, 34349
+                            Yeşilköy/Bakırköy/İstanbul</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-sm-6 d-flex flex-column justify-content-lg-end">
+                    <div class="layer-icon mb-20">
+                        <i class="icon-phone"></i>
+                        <p>0 (212) 453 92 35</p>
+                    </div>
+                    <div class="layer-icon">
+                        <i class="icon-print"></i>
+                        <p>0 (212) 350 94 14</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-sm-6">
+                    <h4 class="footer-title">Bizimle iletişime geçin</h4>
+                    <p class="mb-20">Yedi Yapı topluluğuna ilişkin güncel haberler için bizi
+                        sosyal medya hesaplarımızdan takip edin.</p>
+                    <div class="socials">
+                        <a href="#"> <i class="icon-instagram"></i></a>
+                        <a href="#"> <i class="icon-facebook"></i></a>
+                        <a href="#"> <i class="icon-twitter"></i></a>
+                        <a href="#"> <i class="icon-youtube"></i></a>
+                        <a href="#"> <i class="icon-linkedin"></i></a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div class="footer-below">
+        <div class="container">
+            <a href="">Bilgi Toplumu Hizmetleri</a>
+            <a href="">İhbar Bildirim</a>
+            <a href="">Kişisel Verilerin Korunması</a>
+            <a href="">Dökümantasyon</a>
+        </div>
+    </div>
+    <!-- Footer Side END -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Vendor Js Files File-->
+    <script src="assets/vendor/jquerry/jquery-3.6.0.min.js"></script>
+    <script src="assets/vendor/swipperjs/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/waypoint/jquery.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+
+    <!-- Main Js Source File -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

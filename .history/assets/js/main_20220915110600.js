@@ -34,8 +34,13 @@ $(document).ready(function () {
     // Desktop Dropdown Content
     
     // Aos init
+    if (window.innerWidth >= 1000) {
+        
+    }
     AOS.init({
         duration: 1200,
+        once: false,
+        mirror: false,
         offset: 330,
         disable: 'mobile' 
     });

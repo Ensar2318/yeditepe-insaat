@@ -8,60 +8,6 @@
         height: 100%;
     }
 }
-.index-video-section {
-    height: 100vh;
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    &::before {
-        content: "";
-        background: rgb(0, 0, 0);
-        background: linear-gradient(18deg, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0) 100%);
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        position: absolute;
-    }
-    .content {
-        transition: 2s;
-        position: relative;
-        @include media-down("lg") {
-            padding-left: 20px;
-        }
-        @include media-down("md") {
-            width: auto;
-        }
-        @media (max-height: 500px) {
-            padding-top: 120px;
-        }
-
-        .title {
-            font: 300 80px $barlow;
-            color: $white;
-            margin-bottom: 18px;
-            @include media-down("lg") {
-                font-size: 60px;
-            }
-            @include media-down("sm") {
-                font-size: 40px;
-            }
-        }
-        p {
-            color: $white;
-            margin-bottom: 50px;
-        }
-    }
-    .redirect {
-        margin-top: 26px;
-        display: flex;
-        gap: 12px;
-    }
-}
-
 
 .index-hero-section {
     height: 100vh;

@@ -36,8 +36,9 @@ $(document).ready(function () {
     // Aos init
     AOS.init({
         duration: 1200,
-        offset: 330,
-        disable: 'mobile' 
+        once: false,
+        mirror: false,
+        ofset: 6
     });
 
 });

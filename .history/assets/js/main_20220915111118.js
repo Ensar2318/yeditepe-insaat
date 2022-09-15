@@ -32,13 +32,14 @@ $(document).ready(function () {
         desktopDropdown();
     }
     // Desktop Dropdown Content
-    
+
     // Aos init
-    AOS.init({
-        duration: 1200,
-        offset: 330,
-        disable: 'mobile' 
-    });
+    if (window.innerWidth >= 768) {
+        AOS.init({
+            duration: 1200,
+            offset: 330,
+        });
+    }
 
 });
 

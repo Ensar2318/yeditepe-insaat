@@ -1,4 +1,7 @@
 .video-hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
     video {
         position: absolute;
         left: 0;
@@ -15,7 +18,6 @@
     align-items: center;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align: center;
     &::before {
         content: "";
         background: rgb(0, 0, 0);
@@ -27,6 +29,7 @@
         position: absolute;
     }
     .content {
+        width: 380px;
         transition: 2s;
         position: relative;
         @include media-down("lg") {
