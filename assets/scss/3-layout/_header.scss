@@ -26,6 +26,7 @@ header {
         display: flex;
         list-style: none;
         gap: 40px;
+        
         @include media-down("xl") {
             gap: 10px;
         }
@@ -36,6 +37,9 @@ header {
             align-items: center;
             gap: 5px;
             transition: $transition;
+            font: 500 14px $montserrat;
+            letter-spacing: 1px;
+            text-transform: uppercase;
             &:hover {
                 background-color: $primary;
                 .dropdown-icon {
@@ -81,6 +85,7 @@ header {
                     display: flex;
                     align-items: center;
                     transition: 0.5s;
+                    font: 400 18px $barlow;
                 }
             }
         }
@@ -99,7 +104,6 @@ header {
             .link-dropdown-content {
                 a {
                     color: $white;
-                    font: 400 18px $barlow;
                 }
             }
         }
@@ -107,7 +111,6 @@ header {
         .navbar {
             .nav-link {
                 color: $white;
-                font: 400 18px $barlow;
                 &:hover {
                     color: $white;
                 }
@@ -132,7 +135,6 @@ header {
             .link-dropdown-content {
                 a {
                     color: $black;
-                    font: 400 18px $barlow;
                 }
             }
         }
@@ -140,7 +142,6 @@ header {
         .navbar {
             .nav-link {
                 color: $black;
-                font: 900 16px $avenir;
                 &:hover {
                     color: $white;
                 }

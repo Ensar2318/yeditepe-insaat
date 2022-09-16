@@ -53,6 +53,21 @@ table {
 
 /* Colors */
 @font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat-Regular.ttf) format("TrueType");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat-Medium.ttf) format("TrueType");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat-SemiBold.ttf) format("TrueType");
+  font-weight: 600;
+}
+@font-face {
   font-family: "barlow";
   src: url(../fonts/BarlowCondensed-Light.ttf) format("TrueType");
   font-weight: 300;
@@ -1079,6 +1094,9 @@ header .navbar .nav-link {
   align-items: center;
   gap: 5px;
   transition: 0.5s;
+  font: 500 14px "montserrat";
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 header .navbar .nav-link:hover {
   background-color: #D98563;
@@ -1123,6 +1141,7 @@ header .dropdown .link-dropdown-content ol a {
   display: flex;
   align-items: center;
   transition: 0.5s;
+  font: 400 18px "barlow";
 }
 header.dark {
   background-color: rgba(0, 0, 0, 0.7);
@@ -1134,11 +1153,9 @@ header.dark .mobile-btn svg {
 }
 header.dark .dropdown .link-dropdown-content a {
   color: #ffffff;
-  font: 400 18px "barlow";
 }
 header.dark .navbar .nav-link {
   color: #ffffff;
-  font: 400 18px "barlow";
 }
 header.dark .navbar .nav-link:hover {
   color: #ffffff;
@@ -1158,11 +1175,9 @@ header.light .mobile-btn svg {
 }
 header.light .dropdown .link-dropdown-content a {
   color: #2E2E2E;
-  font: 400 18px "barlow";
 }
 header.light .navbar .nav-link {
   color: #2E2E2E;
-  font: 900 16px "avenir";
 }
 header.light .navbar .nav-link:hover {
   color: #ffffff;
