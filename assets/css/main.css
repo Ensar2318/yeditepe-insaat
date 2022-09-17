@@ -1846,6 +1846,15 @@ footer .socials a:hover {
   width: 100%;
   height: 100%;
 }
+.video-hero-section .preview {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 .index-video-section {
   height: 100vh;
